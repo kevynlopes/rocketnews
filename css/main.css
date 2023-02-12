@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+.container-bg {
+  background-color: black;
+  width: 820px;
+  height: 900px;
+}
+
+.conteudo-ig img {
+  width: 1175px;
+  height: 980px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  width: 389px;
+  height: 94px;
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+
+.conteudo {
+  margin-top: 150px;
+  margin-left: 40px;
+}
+
+.cor-v1 {
+  color: var(--cor-v1);
+}
+
+.cor-c1 {
+  color: var(--cor-c1);
+}
+.cor-p1 {
+  color: var(--cor-p1);
+}
+
+.assunto {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+}
+
+form {
+  width: 500px;
+  text-align: left;
+  z-index: 10;
+  position: fixed;
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  display: block;
+  z-index: -1;
+  width: 1000px;
+  height: 52px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.saiba {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.saiba a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 138.73%;
+  color: var(--cor-p1);
+}
+
+form::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 51px;
+  top: 47px;
+  left: -8px;
+  background-color: var(--cor-v1);
+  background-size: cover;
+}
+
+form::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 51px;
+  top: 47px;
+  left: 1000px;
+  background-image: url("/assets/button.png");
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .assunto {
+    font-size: 20px;
+    max-width: 60ch;
+  }
+  input[type="text"] {
+    display: block;
+    z-index: -1;
+    width: 700px;
+    height: 52px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+}
